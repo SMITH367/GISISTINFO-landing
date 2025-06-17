@@ -1,19 +1,57 @@
-@media(max-width:1520px) {
-    .left-svg {
-        display: none;
-    }
+
+@media (max-width: 1520px) {
+  .left-svg {
+    display: none;
+  }
 }
 
-/* small css for the mobile nav close */
 #nav-mobile-btn.close span:first-child {
-    transform: rotate(45deg);
-    top: 4px;
-    position: relative;
-    background: #a0aec0;
+  transform: rotate(45deg);
+  top: 4px;
+  position: relative;
+  background: #a0aec0;
 }
 
 #nav-mobile-btn.close span:nth-child(2) {
-    transform: rotate(-45deg);
-    margin-top: 0px;
-    background: #a0aec0;
+  transform: rotate(-45deg);
+  margin-top: 0px;
+  background: #a0aec0;
 }
+
+/* móviles */
+@media (max-width: 768px) {
+  #testimonials {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #testimonials .max-w-2xl,
+  #testimonials .xl\:max-w-full {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  #testimonials blockquote {
+    width: 100% !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem !important;
+  }
+
+  #testimonials img {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .xl\:flex-row {
+    flex-direction: column !important;
+  }
+
+  .xl\:pl-8,
+  .xl\:pr-8 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+

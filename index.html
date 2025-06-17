@@ -2,319 +2,389 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GISISTINFO</title>
-    <link rel="icon" type="image/jpg" href="/images/logogrupo.jpg">
-    <!--
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GISISTINFO</title>
+  <link rel="icon" type="image/jpg" href="/images/logogrupo.jpg">
+  <!--
         For more customization options, we would advise
-        you to build your TailwindCSS from the source.
+        you to build your TazilwindCSS from the source.
         https://tailwindcss.com/docs/installation
     -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.2/tailwind.min.css">
-    <!-- Small CSS to Hide elements at 1520px size -->
-    <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.2/tailwind.min.css">
+  <!-- Small CSS to Hide elements at 1520px size -->
+  <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body class="overflow-x-hidden antialiased">
-    <!-- Header Section -->
-    <header class="fixed top-0 z-50 w-full h-24 bg-white shadow-md">
-        <div
-            class="container flex items-center justify-center h-full max-w-6xl px-8 mx-auto sm:justify-between xl:px-0">
+  <!-- Header Section -->
+  <header class="fixed top-0 z-50 w-full bg-white shadow-md">
+    <div class="flex flex-col sm:flex-row sm:justify-between items-center max-w-6xl mx-auto px-4 py-4">
 
-            <a href="/" class="relative flex items-center inline-block h-full font-black leading-none">
-                <img src="./images/logo Semillero 2024.jpg" class="w-1/3" alt="">
-            </a>
+      <!-- Logo -->
+      <a href="/" class="flex items-center">
+        <img src="./images/logo Semillero 2024.jpg" class="h-12" alt="Logo">
+      </a>
 
-            <nav id="nav"
-                class="absolute top-0 left-0 z-50 flex flex-col items-center justify-between hidden w-full h-64 pt-5 mt-24 text-sm text-gray-800 bg-white border-t border-gray-200 md:w-auto md:flex-row md:h-24 lg:text-base md:bg-transparent md:mt-0 md:border-none md:py-0 md:flex md:relative">
-                <a href="#"
-                    class="mr-0 font-bold duration-200 md:mr-3 lg:mr-8 transition-all hover:text-green-900 border-b-2 border-transparent hover:border-green-900">NOSOTROS</a>
-                <a href="#features"
-                    class="mr-0 font-bold duration-200 md:mr-3 lg:mr-8 transition-all hover:text-green-900 border-b-2 border-transparent hover:border-green-900">PROYECTOS</a>
-                <a href="#testimonials"
-                    class="font-bold duration-200 transition-all hover:text-green-900 border-b-2 border-transparent hover:border-green-900 xs:pb-40">INTEGRANTES</a>
-            </nav>
+      <nav
+        class="mt-4 sm:mt-0 flex flex-wrap justify-center sm:justify-end gap-4 text-sm sm:text-base text-gray-800 w-full sm:w-auto">
+        <a href="#" class="font-bold hover:text-green-900 border-b-2 border-transparent hover:border-green-900">
+          NOSOTROS
+        </a>
+        <a href="#features" class="font-bold hover:text-green-900 border-b-2 border-transparent hover:border-green-900">
+          PROYECTOS
+        </a>
+        <a href="#testimonials"
+          class="font-bold hover:text-green-900 border-b-2 border-transparent hover:border-green-900">
+          INTEGRANTES
+        </a>
+      </nav>
 
-            <div id="nav-mobile-btn"
-                class="absolute top-0 right-0 z-50 block w-6 mt-8 mr-10 cursor-pointer select-none md:hidden sm:mt-10">
-                <span class="block w-full h-1 mt-2 duration-200 transform bg-gray-800 rounded-full sm:mt-1"></span>
-                <span class="block w-full h-1 mt-1 duration-200 transform bg-gray-800 rounded-full"></span>
-            </div>
+    </div>
+  </header>
 
-        </div>
-    </header>
 
-    <!-- End Header Section-->
+  <!-- End Header Section-->
 
-    <!-- BEGIN HERO SECTION -->
+  <!-- BEGIN HERO SECTION -->
+  <div
+    class="relative items-center justify-center mt-12 w-full overflow-x-hidden overflow-y-hidden lg:pt-40 lg:pb-20 xl:pt-40 xl:pb-20">
     <div
-        class="relative items-center justify-center mt-12 w-full overflow-x-hidden overflow-y-hidden lg:pt-40 lg:pb-20 xl:pt-40 xl:pb-20">
-        <div
-            class="container flex flex-col items-center justify-between h-full max-w-6xl px-8 mx-auto -mt-32 lg:flex-row xl:px-0">
-            <div
-                class="z-30 flex flex-col items-center w-full max-w-xl pt-48 text-center lg:items-start lg:w-1/2 lg:pt-20 xl:pt-40 lg:text-left">
-                <h1 class="relative mb-4 text-3xl font-black leading-tight text-gray-900 sm:text-6xl xl:mb-8"> Grupo de
-                    investigación
-                </h1>
-                <p class="pr-0 mb-2 text-base text-gray-600 sm:text-lg xl:text-xl lg:pr-20">GISISTINFO Soluciones
-                    Tecnológicas de Nueva Generación para el Desarrollo Social, Industrial y Empresarial</p>
-                <a href="#_"
-                    class="relative self-start inline-block w-auto px-8 py-2 mx-auto mt-0 text-base font-bold text-white bg-green-700 border-t border-gray-200 rounded-md shadow-xl sm:mt-1 fold-bold lg:mx-0  transition duration-100 ease-in-out transform hover:scale-105">Ver
-                    proyectos</a>
-                <!-- Integrates with section -->
-                <div class="flex-col hidden mt-12 sm:flex lg:mt-24">
-                    <p class="mb-4 text-xl font-medium tracking-widest text-gray-500 uppercase">UNIVERSIDAD DE CARTAGENA
-                    </p>
+      class="container flex flex-col items-center justify-between h-full max-w-6xl px-8 mx-auto -mt-32 lg:flex-row xl:px-0">
+      <div
+        class="z-30 flex flex-col items-center w-full max-w-xl pt-48 text-center lg:items-start lg:w-1/2 lg:pt-20 xl:pt-40 lg:text-left">
+        <h1 class="relative mb-4 text-3xl font-black leading-tight text-gray-900 sm:text-6xl xl:mb-8"> Grupo de
+          investigación
+        </h1>
+        <p class="pr-0 mb-2 text-base text-gray-600 sm:text-lg xl:text-xl lg:pr-20">GISISTINFO Soluciones
+          Tecnológicas de Nueva Generación para el Desarrollo Social, Industrial y Empresarial</p>
+        <a href="#_"
+          class="relative self-start inline-block w-auto px-8 py-2 mx-auto mt-0 text-base font-bold text-white bg-green-700 border-t border-gray-200 rounded-md shadow-xl sm:mt-1 fold-bold lg:mx-0  transition duration-100 ease-in-out transform hover:scale-105">Ver
+          proyectos</a>
+        <div class="flex-col hidden mt-12 sm:flex lg:mt-24">
+          <p class="mb-4 text-xl font-medium tracking-widest text-gray-500 uppercase">UNIVERSIDAD DE CARTAGENA
+          </p>
 
-                </div>
-                <svg class="absolute left-0 max-w-md mt-10 -ml-64 left-svg" viewBox="0 0 423 423"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <defs>
-                        <linearGradient x1="100%" y1="0%" x2="4.48%" y2="0%" id="linearGradient-1">
-                            <stop stop-color="#036e79" offset="0%" />
-                            <stop stop-color="#8d9d3a" offset="100%" />
-                        </linearGradient>
-                        <filter x="-9.3%" y="-6.7%" width="118.7%" height="118.7%" filterUnits="objectBoundingBox"
-                            id="filter-3">
-                            <feOffset dy="8" in="SourceAlpha" result="shadowOffsetOuter1" />
-                            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
-                            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1" />
-                        </filter>
-                        <rect id="path-2" x="63" y="504" width="300" height="300" rx="40" />
-                    </defs>
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity=".9">
-                        <g id="Desktop-HD" transform="translate(-39 -531)">
-                            <g id="Hero" transform="translate(43 83)">
-                                <g id="Rectangle-6" transform="rotate(45 213 654)">
-                                    <use fill="#000" filter="url(#filter-3)" xlink:href="#path-2" />
-                                    <use fill="url(#linearGradient-1)" xlink:href="#path-2" />
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                </svg>
-            </div>
-            <div class="md:w-1/2 w-full">
-                <div class="">
-                    <img src="./images/Heroimage.png" class="">
-
-                </div>
-            </div>
         </div>
+        <svg class="absolute left-0 max-w-md mt-10 -ml-64 left-svg" viewBox="0 0 423 423"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <linearGradient x1="100%" y1="0%" x2="4.48%" y2="0%" id="linearGradient-1">
+              <stop stop-color="#036e79" offset="0%" />
+              <stop stop-color="#8d9d3a" offset="100%" />
+            </linearGradient>
+            <filter x="-9.3%" y="-6.7%" width="118.7%" height="118.7%" filterUnits="objectBoundingBox" id="filter-3">
+              <feOffset dy="8" in="SourceAlpha" result="shadowOffsetOuter1" />
+              <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+              <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1" />
+            </filter>
+            <rect id="path-2" x="63" y="504" width="300" height="300" rx="40" />
+          </defs>
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity=".9">
+            <g id="Desktop-HD" transform="translate(-39 -531)">
+              <g id="Hero" transform="translate(43 83)">
+                <g id="Rectangle-6" transform="rotate(45 213 654)">
+                  <use fill="#000" filter="url(#filter-3)" xlink:href="#path-2" />
+                  <use fill="url(#linearGradient-1)" xlink:href="#path-2" />
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div class="md:w-1/2 w-full">
+        <div class="">
+          <img src="./images/Heroimage.png" class="">
+
+        </div>
+      </div>
     </div>
-    <!-- HERO SECTION END -->
+  </div>
+  <!-- HERO SECTION END -->
 
-    <!-- BEGIN FEATURES SECTION -->
-    <div id="features" class="relative w-full py-10 border-t border-gray-200 md:py-16 lg:py-24 xl:py-20 xl:px-0">
-        <div class="container flex flex-col items-center justify-between h-full max-w-6xl mx-auto">
-            <h2 class="my-5 text-base font-medium tracking-tight text-green-800 uppercase">Soluciones desarrolladas</h2>
-            <h3
-                class="max-w-2xl px-5 mt-2 text-3xl font-black leading-tight text-center text-gray-900 sm:mt-0 sm:px-0 sm:text-6xl">
-                Nuestros proyectos</h3>
+  <!-- BEGIN FEATURES SECTION -->
+  <div id="features" class="relative w-full py-10 border-t border-gray-200 md:py-16 lg:py-24 xl:py-20 xl:px-0">
+    <div class="container flex flex-col items-center justify-between h-full max-w-6xl mx-auto">
+      <h2 class="my-5 text-base font-medium tracking-tight text-green-800 uppercase">Soluciones desarrolladas</h2>
+      <h3
+        class="max-w-2xl px-5 mt-2 text-3xl font-black leading-tight text-center text-gray-900 sm:mt-0 sm:px-0 sm:text-6xl">
+        Nuestros proyectos</h3>
 
-            <div class="container mx-auto px-4 py-8">
-                <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-                    <!-- Card -->
-                    <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col justify-between">
-                        <div>
-                            <h2 class="text-xl font-bold text-gray-800 mb-2">SIGDE</h2>
-                            <p class="text-gray-600  py-6">Sistema de Información para Gestión de Diagnósticos Estratégicos.</p>
-                        </div>
-                        <a href="https://sigde.sydeditores.com.co" target="_blank" rel="noopener noreferrer"
-                            class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-xl transition duration-300 ease-in-out transform hover:scale-105 text-center">
-                            Ver Proyecto
-                        </a>
-                    </div>
-
-                    <!-- Card -->
-                    <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col justify-between">
-                        <div>
-                            <h2 class="text-xl font-bold text-gray-800 mb-2">Gestión HC</h2>
-                            <p class="text-gray-600 py-6">Sistema de Gestión de Historias Clínicas para consultorio médico.</p>
-                        </div>
-                        <a href="http://gisistinfo.unicartagena.edu.co:8080" target="_blank" rel="noopener noreferrer"
-                            class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-xl transition duration-300 ease-in-out transform hover:scale-105 text-center">
-                            Ver Proyecto
-                        </a>
-                    </div>
-
-                    <!-- Card -->
-                    <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col justify-between">
-                        <div>
-                            <h2 class="text-xl font-bold text-gray-800 mb-2">B2B Connect</h2>
-                            <p class="text-gray-600 py-6 ">Aplicación de rueda de negocios.</p>
-                        </div>
-                        <a href="https://b2b-connect.sydeditores.com.co" target="_blank" rel="noopener noreferrer"
-                            class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-xl transition duration-300 ease-in-out transform hover:scale-105 text-center">
-                            Ver Proyecto
-                        </a>
-                    </div>
-
-                     <!-- Card -->
-                     <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col justify-between">
-                        <div>
-                            <h2 class="text-xl font-bold text-gray-800 mb-2">Propuesta curricular para la enseñanza de IA</h2>
-                            <p class="text-gray-600 py-6 ">Formato de curriculum para ayudar a docentes a la implementación de la enseñanza de IA en instituciones educativas desde grado 1ro a 11.</p>
-                        </div>
-                        <a href="#" target="_blank" rel="noopener noreferrer"
-                            class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-xl transition duration-300 ease-in-out transform hover:scale-105 text-center">
-                            Proximamente...
-                        </a>
-                    </div>
-                    <!-- Card -->
-                    <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col justify-between">
-                        <div>
-                            <h2 class="text-xl font-bold text-gray-800 mb-2">OVA IA1a11</h2>
-                            <p class="text-gray-600 py-6 ">Objeto virtual de aprendizaje para la enseñanza de IA en instituciones educativas desde grado 1ro a 11.</p>
-                        </div>
-                        <a href="#" target="_blank" rel="noopener noreferrer"
-                            class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-xl transition duration-300 ease-in-out transform hover:scale-105 text-center">
-                            Proximamente...
-                        </a>
-                    </div>
-                </div>
+      <div class="container mx-auto px-4 py-8">
+        <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Card -->
+          <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col justify-between">
+            <div>
+              <h2 class="text-xl font-bold text-gray-800 mb-2">SIGDE</h2>
+              <p class="text-gray-600  py-6">Sistema de Información para Gestión de Diagnósticos Estratégicos.</p>
             </div>
-
-
-        </div>
-    </div>
-    <!-- END FEATURES SECTION -->
-
-
-    <!-- Start Testimonials -->
-    <div id="testimonials"
-        class="flex items-center w-full  py-10 border-t border-gray-200 md:py-8 lg:py-12 xl:py-20 xl:px-0">
-        <div class="max-w-6xl mx-auto">
-            <div class="flex-col items-center ">
-                <div class="flex flex-col items-center justify-center w-full h-full max-w-2xl mx-auto text-center">
-                    <p class="my-5 text-base font-medium tracking-tight text-green-800 uppercase">Construyendo
-                        soluciones
-                    </p>
-                    <h2
-                        class="text-4xl font-extrabold leading-10 tracking-tight text-gray-900 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
-                        Nuestro grupo</h2>
-                    <p class="my-6 text-xl font-medium text-gray-500">Investigando y desarrollando soluciones para
-                        generar impacto positivo</p>
-
-                </div>
-                <div class="flex flex-col items-center justify-center max-w-2xl py-8 mx-auto xl:flex-row xl:max-w-full">
-                    <div class="w-full xl:w-1/2 xl:pr-8">
-                        <blockquote
-                            class="flex flex-col-reverse items-center justify-between w-full col-span-1 p-6 text-center transition-all duration-200 bg-gray-100 rounded-lg md:flex-row md:text-left hover:bg-white hover:shadow ease">
-                            <div class="flex flex-col pr-8">
-                                <div class="relative pl-12">
-                                    <svg class="absolute left-0 w-10 h-10 text-green-800 fill-current"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
-                                        <path
-                                            d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
-                                    </svg>
-                                    <p class="mt-2 text-base text-gray-600">Soy La lider de este grupo, estamos
-                                        contentos de desarrollar proyectos
-                                    </p>
-                                </div>
-
-                                <h3 class="pl-12 mt-3 text-base font-medium leading-5 text-gray-800 truncate">Monica
-                                    Ospino Pinedo
-                                    <span class="mt-1 text-sm leading-5 text-gray-500 truncate">- Lider de
-                                        investigación</span></h3>
-                                <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
-                            </div>
-                            <img class="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
-                                src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2694&q=80"
-                                alt="">
-                        </blockquote>
-                        <blockquote
-                            class="flex flex-col-reverse items-center justify-between w-full col-span-1 p-6 mt-16 mb-16 text-center transition-all duration-200 bg-gray-100 rounded-lg md:flex-row md:text-left hover:bg-white hover:shadow ease xl:mb-0">
-                            <div class="flex flex-col pr-10">
-                                <div class="relative pl-12">
-                                    <svg class="absolute left-0 w-10 h-10 text-green-800 fill-current"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
-                                        <path
-                                            d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
-                                    </svg>
-                                    <p class="mt-2 text-base text-gray-600">El enfoque empresarial genera impactos.</p>
-                                </div>
-                                <h3 class="pl-12 mt-3 text-base font-medium leading-5 text-gray-800 truncate">Ivan
-                                    Monterrosa<span class="mt-1 text-sm leading-5 text-gray-500 truncate">- CEO
-                                        Investigador</span></h3>
-                                <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
-                            </div>
-                            <img class="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
-                                src="https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80"
-                                alt="">
-                        </blockquote>
-                    </div>
-                    <div class="w-full xl:w-1/2 xl:pl-8">
-                        <blockquote
-                            class="flex flex-col-reverse items-center justify-between w-full col-span-1 p-6 text-center transition-all duration-200 bg-gray-100 rounded-lg md:flex-row md:text-left hover:bg-white hover:shadow ease">
-                            <div class="flex flex-col pr-10">
-                                <div class="relative pl-12">
-                                    <svg class="absolute left-0 w-10 h-10 text-green-800 fill-current"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
-                                        <path
-                                            d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
-                                    </svg>
-                                    <p class="mt-2 text-base text-gray-600"> sometext
-                                    </p>
-                                </div>
-
-                                <h3 class="pl-12 mt-3 text-base font-medium leading-5 text-gray-800 truncate">Auxiliar
-                                    de investigación
-                                    <span class="mt-1 text-sm leading-5 text-gray-500 truncate">- Auxiliar</span>
-                                </h3>
-                                <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
-                            </div>
-                            <img class="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
-                                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1700&q=80"
-                                alt="">
-                        </blockquote>
-                        <blockquote
-                            class="flex flex-col-reverse items-center justify-between w-full col-span-1 p-6 mt-16 text-center transition-all duration-200 bg-gray-100 rounded-lg md:flex-row md:text-left hover:bg-white hover:shadow ease">
-                            <div class="flex flex-col pr-10">
-                                <div class="relative pl-12">
-                                    <svg class="absolute left-0 w-10 h-10 text-green-800 fill-current"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
-                                        <path
-                                            d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
-                                    </svg>
-                                    <p class="mt-2 text-base text-gray-600">Finally a quick and easy system I can use
-                                        for any type of
-                                        project.</p>
-                                </div>
-
-                                <h3 class="pl-12 mt-3 text-base font-medium leading-5 text-gray-800 truncate">Molly
-                                    Sanchez <span class="mt-1 text-sm leading-5 text-gray-500 truncate">- CEO
-                                        SomeCompany</span></h3>
-                                <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
-                            </div>
-                            <img class="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
-                                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80"
-                                alt="">
-                        </blockquote>
-                    </div>
-                </div>
-
-
+            <a href="https://sigde.sydeditores.com.co" target="_blank" rel="noopener noreferrer"
+              class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-xl transition duration-300 ease-in-out transform hover:scale-105 text-center">
+              Ver Proyecto
+            </a>
+          </div>
+          <!-- Card -->
+          <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col justify-between">
+            <div>
+              <h2 class="text-xl font-bold text-gray-800 mb-2">SISPRODOC</h2>
+              <p class="text-gray-600  py-6">Sistema de Gestion de trabajos de grado, para instituciones universitarias.
+              </p>
             </div>
+            <a href="http://gisistinfo.unicartagena.edu.co:8080" target="_blank" rel="noopener noreferrer"
+              class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-xl transition duration-300 ease-in-out transform hover:scale-105 text-center">
+              Ver Proyecto
+            </a>
+          </div>
+          <!-- Card -->
+          <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col justify-between">
+            <div>
+              <h2 class="text-xl font-bold text-gray-800 mb-2">Gestión HC</h2>
+              <p class="text-gray-600 py-6">Sistema de Gestión de Historias Clínicas para consultorio médico.</p>
+            </div>
+            <a href="http://gisistinfo.unicartagena.edu.co:8080" target="_blank" rel="noopener noreferrer"
+              class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-xl transition duration-300 ease-in-out transform hover:scale-105 text-center">
+              Ver Proyecto
+            </a>
+          </div>
+
+          <!-- Card -->
+          <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col justify-between">
+            <div>
+              <h2 class="text-xl font-bold text-gray-800 mb-2">B2B Connect</h2>
+              <p class="text-gray-600 py-6 ">Aplicación de rueda de negocios.</p>
+            </div>
+            <a href="https://b2b-connect.sydeditores.com.co" target="_blank" rel="noopener noreferrer"
+              class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-xl transition duration-300 ease-in-out transform hover:scale-105 text-center">
+              Ver Proyecto
+            </a>
+          </div>
+
+          <!-- Card -->
+          <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col justify-between">
+            <div>
+              <h2 class="text-xl font-bold text-gray-800 mb-2">Propuesta curricular para la enseñanza de IA</h2>
+              <p class="text-gray-600 py-6 ">Formato de curriculum para ayudar a docentes a la implementación de la
+                enseñanza de IA en instituciones educativas desde grado 1ro a 11.</p>
+            </div>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-xl transition duration-300 ease-in-out transform hover:scale-105 text-center">
+              Proximamente...
+            </a>
+          </div>
+          <!-- Card -->
+          <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col justify-between">
+            <div>
+              <h2 class="text-xl font-bold text-gray-800 mb-2">OVA IA1a11</h2>
+              <p class="text-gray-600 py-6 ">Objeto virtual de aprendizaje para la enseñanza de IA en instituciones
+                educativas desde grado 1ro a 11.</p>
+            </div>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-xl transition duration-300 ease-in-out transform hover:scale-105 text-center">
+              Proximamente...
+            </a>
+          </div>
         </div>
+      </div>
+
+
     </div>
-    <!-- End Testimonials-->
+  </div>
+  <!-- END FEATURES SECTION -->
 
 
-    <footer class="px-4 pt-12 pb-8 text-white bg-white border-t border-gray-200">
-        <div class="container flex flex-col justify-between max-w-6xl px-4 mx-auto overflow-hidden lg:flex-row">
+  <!-- Start Testimonials -->
+  <div id="testimonials" class="w-full py-10 border-t border-gray-200 md:py-8 lg:py-12 xl:py-20">
+    <div class="w-full px-4">
+      <!-- Título -->
+      <div class="flex flex-col items-center text-center max-w-4xl mx-auto">
+        <p class="my-5 text-base font-medium tracking-tight text-green-800 uppercase">Construyendo soluciones</p>
+        <h2 class="text-4xl font-extrabold leading-10 tracking-tight text-gray-900 sm:text-5xl md:text-6xl">Nuestro
+          grupo</h2>
+        <p class="my-6 text-xl font-medium text-gray-500">Investigando y desarrollando soluciones para generar impacto
+          positivo</p>
+      </div>
 
-        </div>
-        <div class="pt-4 pt-6 mt-10 text-center text-gray-500 border-t border-gray-100">© 2025 Universidad de Cartagena.
-            Todos los derechos reservados.</div>
 
-        <div class="pt-2 pt-4 mt-2 text-center text-gray-600 border-t border-gray-100">Desarrollado de 💚 por <a
-                href="https://www.linkedin.com/in/brayan-puente-ruiz/">Brayan Puentes R</a></div>
-    </footer>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mt-12">
 
-    <!-- a little JS for the mobile nav button -->
-    <script src="./js/header.js"></script>
+        <!-- Tarjeta -->
+
+        <blockquote
+          class="flex flex-col-reverse items-center justify-between w-full p-6 text-center transition bg-gray-100 rounded-lg hover:bg-white hover:shadow md:flex-row md:text-left">
+          <div class="flex flex-col pr-6">
+            <div class="relative pl-12">
+              <svg class="absolute left-0 w-10 h-10 text-green-800 fill-current" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 100 125">
+                <path
+                  d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
+              </svg>
+              <p class="mt-2 text-base text-gray-600">Soy la líder de este grupo, estamos contentos de desarrollar
+                proyectos.</p>
+            </div>
+            <h3 class="pl-12 mt-3 text-base font-medium text-gray-800">Monica Ospino Pinedo
+              <span class="block mt-1 text-sm text-gray-500">- Líder de investigación</span>
+            </h3>
+          </div>
+          <img class="w-24 h-24 mb-5 bg-gray-300 rounded-full object-cover md:mb-0"
+            src="images/Monica Ospino Pinedo.jpg" alt="">
+        </blockquote>
+
+
+        <blockquote
+          class="flex flex-col-reverse items-center justify-between w-full p-6 text-center transition bg-gray-100 rounded-lg hover:bg-white hover:shadow md:flex-row md:text-left">
+          <div class="flex flex-col pr-6">
+            <div class="relative pl-12">
+              <svg class="absolute left-0 w-10 h-10 text-green-800 fill-current" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 100 125">
+                <path
+                  d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
+              </svg>
+              <p class="mt-2 text-base text-gray-600">Investigador Universitario.</p>
+            </div>
+            <h3 class="pl-12 mt-3 text-base font-medium text-gray-800">Iván Javier Monterrosa Castro
+              <span class="block mt-1 text-sm text-gray-500">- Líder de investigación</span>
+            </h3>
+          </div>
+          <img class="w-24 h-24 mb-5 bg-gray-300 rounded-full object-cover md:mb-0"
+            src="images/Iván Javier Monterrosa Castro.jpg" alt="">
+        </blockquote>
+
+
+        <blockquote
+          class="flex flex-col-reverse items-center justify-between w-full p-6 text-center transition bg-gray-100 rounded-lg hover:bg-white hover:shadow md:flex-row md:text-left">
+          <div class="flex flex-col pr-6">
+            <div class="relative pl-12">
+              <svg class="absolute left-0 w-10 h-10 text-green-800 fill-current" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 100 125">
+                <path
+                  d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
+              </svg>
+              <p class="mt-2 text-base text-gray-600">Investigador Universitario</p>
+            </div>
+            <h3 class="pl-12 mt-3 text-base font-medium text-gray-800">Brayan Puentes
+              <span class="block mt-1 text-sm text-gray-500">-Auxiliar de investigación.</span>
+            </h3>
+          </div>
+          <img class="w-24 h-24 mb-5 bg-gray-300 rounded-full object-cover md:mb-0" src="images/Brayan Puentes.jpg"
+            alt="">
+        </blockquote>
+
+
+        <blockquote
+          class="flex flex-col-reverse items-center justify-between w-full p-6 text-center transition bg-gray-100 rounded-lg hover:bg-white hover:shadow md:flex-row md:text-left">
+          <div class="flex flex-col pr-6">
+            <div class="relative pl-12">
+              <svg class="absolute left-0 w-10 h-10 text-green-800 fill-current" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 100 125">
+                <path
+                  d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
+              </svg>
+              <p class="mt-2 text-base text-gray-600">Investigador Universitario.</p>
+            </div>
+            <h3 class="pl-12 mt-3 text-base font-medium text-gray-800">Keila Contreras
+              <span class="block mt-1 text-sm text-gray-500">- Auxiliar de investigación</span>
+            </h3>
+          </div>
+          <img class="w-24 h-24 mb-5 bg-gray-300 rounded-full object-cover md:mb-0" src="images/Keila Contreras.jpg"
+            alt="">
+        </blockquote>
+
+
+        <blockquote
+          class="flex flex-col-reverse items-center justify-between w-full p-6 text-center transition bg-gray-100 rounded-lg hover:bg-white hover:shadow md:flex-row md:text-left">
+          <div class="flex flex-col pr-6">
+            <div class="relative pl-12">
+              <svg class="absolute left-0 w-10 h-10 text-green-800 fill-current" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 100 125">
+                <path
+                  d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
+              </svg>
+              <p class="mt-2 text-base text-gray-600">Investigador Universitario.</p>
+            </div>
+            <h3 class="pl-12 mt-3 text-base font-medium text-gray-800">Sebastian Burgos
+              <span class="block mt-1 text-sm text-gray-500">- Auxiliar de investigación</span>
+            </h3>
+          </div>
+          <img class="w-24 h-24 mb-5 bg-gray-300 rounded-full object-cover md:mb-0" src="images/Sebastian Burgos.jpg"
+            alt="">
+        </blockquote>
+
+        <blockquote
+          class="flex flex-col-reverse items-center justify-between w-full p-6 text-center transition bg-gray-100 rounded-lg hover:bg-white hover:shadow md:flex-row md:text-left">
+          <div class="flex flex-col pr-6">
+            <div class="relative pl-12">
+              <svg class="absolute left-0 w-10 h-10 text-green-800 fill-current" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 100 125">
+                <path
+                  d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
+              </svg>
+              <p class="mt-2 text-base text-gray-600">Investigador Universitario.</p>
+            </div>
+            <h3 class="pl-12 mt-3 text-base font-medium text-gray-800">Giovani Palencia
+              <span class="block mt-1 text-sm text-gray-500">- Auxiliar de investigación</span>
+            </h3>
+          </div>
+          <img class="w-24 h-24 mb-5 bg-gray-300 rounded-full object-cover md:mb-0" src="images/Giovani Palencia.jpg"
+            alt="">
+        </blockquote>
+
+        <blockquote
+          class="flex flex-col-reverse items-center justify-between w-full p-6 text-center transition bg-gray-100 rounded-lg hover:bg-white hover:shadow md:flex-row md:text-left">
+          <div class="flex flex-col pr-6">
+            <div class="relative pl-12">
+              <svg class="absolute left-0 w-10 h-10 text-green-800 fill-current" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 100 125">
+                <path
+                  d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
+              </svg>
+              <p class="mt-2 text-base text-gray-600">Investigador Universitario.</p>
+            </div>
+            <h3 class="pl-12 mt-3 text-base font-medium text-gray-800">Yorleis Arias Rocha
+              <span class="block mt-1 text-sm text-gray-500">- Auxiliar de investigación</span>
+            </h3>
+          </div>
+          <img class="w-24 h-24 mb-5 bg-gray-300 rounded-full object-cover md:mb-0" src="images//Yorleis Arias.jpg"
+            alt="">
+        </blockquote>
+
+
+        <blockquote
+          class="flex flex-col-reverse items-center justify-between w-full p-6 text-center transition bg-gray-100 rounded-lg hover:bg-white hover:shadow md:flex-row md:text-left">
+          <div class="flex flex-col pr-6">
+            <div class="relative pl-12">
+              <svg class="absolute left-0 w-10 h-10 text-green-800 fill-current" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 100 125">
+                <path
+                  d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
+              </svg>
+              <p class="mt-2 text-base text-gray-600">Investigador Universitario.</p>
+            </div>
+            <h3 class="pl-12 mt-3 text-base font-medium text-gray-800">Kenny Miguel Rodríguez Madrid
+              <span class="block mt-1 text-sm text-gray-500">- Auxiliar de investigación</span>
+            </h3>
+          </div>
+          <img class="w-24 h-24 mb-5 bg-gray-300 rounded-full object-cover md:mb-0" src="images/Kenny Rodríguez.jpg"
+            alt="">
+        </blockquote>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Testimonials-->
+
+  <footer class="px-4 pt-12 pb-8 text-white bg-white border-t border-gray-200">
+    <div class="container flex flex-col justify-between max-w-6xl px-4 mx-auto overflow-hidden lg:flex-row">
+
+    </div>
+    <div class="pt-4 pt-6 mt-10 text-center text-gray-500 border-t border-gray-100">© 2025 Universidad de Cartagena.
+      Todos los derechos reservados.</div>
+
+    <div class="pt-2 pt-4 mt-2 text-center text-gray-600 border-t border-gray-100">Desarrollado de 💚 por <a
+        href="https://www.linkedin.com/in/brayan-puente-ruiz/">Brayan Puentes R</a></div>
+  </footer>
+
+
+  <script src="./js/header.js"></script>
 </body>
 
 </html>
